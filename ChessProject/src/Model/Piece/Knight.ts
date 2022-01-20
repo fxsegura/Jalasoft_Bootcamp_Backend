@@ -12,8 +12,8 @@ export class Knight extends Piece{
     }
     
     validMovementPattern(board:BoardInterface, startSpace: SpaceInterface, endSpace: SpaceInterface){
-        let rowSpacesMoved=Math.abs(startSpace.getRow()-endSpace.getRow());
-        let columnSpacesMoved=Math.abs(startSpace.getColumn()-endSpace.getColumn());
+        const rowSpacesMoved=Math.abs(startSpace.getRow()-endSpace.getRow());
+        const columnSpacesMoved=Math.abs(startSpace.getColumn()-endSpace.getColumn());
         if(rowSpacesMoved * columnSpacesMoved === 2){
             return true;
         }

@@ -5,6 +5,13 @@ export class Player implements PlayerInterface{
     private playerName:string;
     private color:string;
     private activeTurn:boolean;
+    
+    constructor(playerID:string,playerName:string,color:string,activeTurn:boolean){
+        this.playerID=playerID;
+        this.playerName=playerName;
+        this.color=color;
+        this.activeTurn=activeTurn;
+    }
     getID(){
         return this.playerID;
     }

@@ -19,4 +19,5 @@ export class Game{
     increaseTurnCount(){
         this.turn=this.turn+1;
     }
+
 }
